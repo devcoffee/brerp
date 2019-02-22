@@ -511,3 +511,10 @@ create index idx_cob_cobranca_cob_pndevedor_id           on brerp.cob_cobranca (
 create index idx_cob_acordolinha_cob_acordo_id          on brerp.cob_acordolinha (cob_acordo_id);
 create index idx_cob_acordolinha_cob_cobranca_id      on brerp.cob_acordolinha (cob_cobranca_id);
 create index idx_cob_acordolinha_cob_datapagamento      on brerp.cob_acordolinha (cob_datapagamento);	
+
+CREATE INDEX idx_c_paymentallocate_ad_org_id ON brerp.c_paymentallocate USING btree (ad_org_id);
+CREATE INDEX idx_c_paymentallocate_c_invoice_id ON brerp.c_paymentallocate USING btree (c_invoice_id);
+CREATE INDEX idx_c_paymentallocate_c_invoicepayschedule_id ON brerp.c_paymentallocate USING btree (c_invoicepayschedule_id);
+CREATE INDEX idx_c_paymentallocate_c_allocationline_id ON brerp.c_paymentallocate USING btree (c_allocationline_id);
+CREATE INDEX idx_c_paymentallocate_c_payment_id ON brerp.c_paymentallocate USING btree (c_payment_id);
+                                                                                                                                           
