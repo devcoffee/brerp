@@ -517,4 +517,16 @@ CREATE INDEX idx_c_paymentallocate_c_invoice_id ON brerp.c_paymentallocate USING
 CREATE INDEX idx_c_paymentallocate_c_invoicepayschedule_id ON brerp.c_paymentallocate USING btree (c_invoicepayschedule_id);
 CREATE INDEX idx_c_paymentallocate_c_allocationline_id ON brerp.c_paymentallocate USING btree (c_allocationline_id);
 CREATE INDEX idx_c_paymentallocate_c_payment_id ON brerp.c_paymentallocate USING btree (c_payment_id);
+
+create index idx_z_agendalinha_z_agenda_id on brerp.z_agendalinha (z_agenda_id);
+create index idx_z_agendalinha_ad_image_id on brerp.z_agendalinha (ad_image_id);
+create index idx_z_agendalinha_z_equipe_id on brerp.z_agendalinha (z_equipe_id);
+create index idx_z_equipelinha_c_location_id on brerp.z_equipelinha (c_location_id);
+create index idx_z_equipelinha_c_bpartner_id on brerp.z_equipelinha (c_bpartner_id);
+create index idx_z_equipelinha_z_equipe_id   on brerp.z_equipelinha (z_equipe_id);
+create index idx_z_ponto_c_location_id  on brerp.z_ponto (c_location_id);
+create index idx_z_ponto_z_codigo on brerp.z_ponto (z_codigo);
+create index idx_z_ponto_line on brerp.z_ponto (line);
+create index idx_z_ponto_z_setor_id on brerp.z_ponto (z_setor_id);
+create index idx_z_ponto_z_z_tipoponto_id on brerp.z_ponto (z_tipoponto_id);                                                                                                                                          
                                                                                                                                            
