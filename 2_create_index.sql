@@ -528,5 +528,12 @@ create index idx_z_ponto_c_location_id  on brerp.z_ponto (c_location_id);
 create index idx_z_ponto_z_codigo on brerp.z_ponto (z_codigo);
 create index idx_z_ponto_line on brerp.z_ponto (line);
 create index idx_z_ponto_z_setor_id on brerp.z_ponto (z_setor_id);
-create index idx_z_ponto_z_z_tipoponto_id on brerp.z_ponto (z_tipoponto_id);                                                                                                                                          
+create index idx_z_ponto_z_z_tipoponto_id on brerp.z_ponto (z_tipoponto_id);  
+                                                                                                                                           create index idx_z_manifestoreceitadespesa_z_manifesto_id  on brerp.z_manifestoreceitadespesa (z_manifesto_id);
+create index idx_z_manifesto_z_ctr on brerp.z_manifesto (z_ctr);
+create index idx_z_manifesto_cof_equipments_id on brerp.z_manifesto (cof_equipments_id);
+create index idx_z_manifesto_cof_bpartner_id on brerp.z_manifesto (cof_bpartner_id);
+create index idx_z_manifesto_cof_driver_id on brerp.z_manifesto (cof_driver_id);
+create index idx_z_manifesto_dest_bpartner_id on brerp.z_manifesto (dest_bpartner_id);
+create index idx_z_manifestoline_c_orderline_id  on brerp.z_manifestoline (c_orderline_id);
                                                                                                                                            
