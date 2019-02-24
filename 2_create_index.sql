@@ -536,4 +536,9 @@ create index idx_z_manifesto_cof_bpartner_id on brerp.z_manifesto (cof_bpartner_
 create index idx_z_manifesto_cof_driver_id on brerp.z_manifesto (cof_driver_id);
 create index idx_z_manifesto_dest_bpartner_id on brerp.z_manifesto (dest_bpartner_id);
 create index idx_z_manifestoline_c_orderline_id  on brerp.z_manifestoline (c_orderline_id);
+
+create index idx_lbr_docfiscal_line_c_invoiceline_id on brerp.lbr_docfiscal_line (c_invoiceline_id);
+create index idx_lbr_docfiscal_line_m_product_id     on brerp.lbr_docfiscal_line (m_product_id);
+create index idx_lbr_docfiscal_line_lbr_cfop_id      on brerp.lbr_docfiscal_line (lbr_cfop_id);                                                                                                                                        
+                                                                                                                                           
                                                                                                                                            
