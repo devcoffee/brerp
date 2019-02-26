@@ -541,4 +541,7 @@ create index idx_lbr_docfiscal_line_c_invoiceline_id on brerp.lbr_docfiscal_line
 create index idx_lbr_docfiscal_line_m_product_id     on brerp.lbr_docfiscal_line (m_product_id);
 create index idx_lbr_docfiscal_line_lbr_cfop_id      on brerp.lbr_docfiscal_line (lbr_cfop_id);                                                                                                                                        
                                                                                                                                            
-                                                                                                                                           
+create index idx_cob_cobrancalinha_line on brerp.cob_cobrancalinha (line);
+create index idx_cob_cob_cobranca_id on brerp.cob_cobrancalinha (cob_cobranca_id);
+create index idx_cob_cob_contratolinha_id on brerp.cob_cobrancalinha (cob_contratolinha_id);
+create index idx_cob_createdby on brerp.cob_cobrancalinha (createdby);                                                                                                                                           
