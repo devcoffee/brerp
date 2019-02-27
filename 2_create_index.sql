@@ -545,3 +545,6 @@ create index idx_cob_cobrancalinha_line on brerp.cob_cobrancalinha (line);
 create index idx_cob_cob_cobranca_id on brerp.cob_cobrancalinha (cob_cobranca_id);
 create index idx_cob_cob_contratolinha_id on brerp.cob_cobrancalinha (cob_contratolinha_id);
 create index idx_cob_createdby on brerp.cob_cobrancalinha (createdby);                                                                                                                                           
+create index idx_cob_acordolinha_duedate 		on brerp.cob_acordolinha (DueDate);
+create index idx_cob_encargo_cob_tipoencargo_id on brerp.cob_encargo (COB_TipoEncargo_ID);
+create index idx_ad_issue_r_request_id 			on brerp.ad_issue (R_Request_ID);
