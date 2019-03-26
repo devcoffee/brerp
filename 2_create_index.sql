@@ -563,4 +563,24 @@ CREATE EXTENSION pg_trgm;
 create index concurrently idx_c_city_name_funcao on brerp.c_city USING gin  ( name2uri(name) gin_trgm_ops );
 create index concurrently idx_C_BPartner_valeu  on brerp.C_BPartner USING gin  ( Value gin_trgm_ops );
 create index concurrently idx_ad_user_phone on brerp.ad_user (phone);                                                                                                                                           
-                                                                                                                                           
+ create index concurrently idx_cof_ajusteestoqueprvstline_cof_ajusteestoqueprevisto_id on brerp.cof_ajusteestoqueprvstline (cof_ajusteestoqueprevisto_id);
+create index concurrently idx_cof_ajusteestoqueprvstline_m_product_id on brerp.cof_ajusteestoqueprvstline (m_product_id);
+create index concurrently idx_cof_estoqueescrituradok200_m_product_id on brerp.cof_estoqueescrituradok200 (m_product_id);
+create index concurrently idx_cof_estoqueescrituradok200_k200_cod_item on brerp.cof_estoqueescrituradok200 (k200_cod_item);
+create index concurrently idx_lbr_nfelot_lbr_nferespid on brerp.lbr_nfelot (lbr_nferespid);
+create index concurrently idx_lbr_nfelot_lbr_nferecid on brerp.lbr_nfelot (lbr_nferecid);
+create index concurrently idx_lbr_nfelot_documentno on brerp.lbr_nfelot (documentno);
+create index concurrently idx_c_landedcostallocation_m_costelement_id 			on brerp.c_landedcostallocation (m_costelement_id);
+create index concurrently idx_c_landedcostallocation_m_attributesetinstance_id  on brerp.c_landedcostallocation (m_attributesetinstance_id);
+create index concurrently idx_c_landedcostallocation_m_product_id on brerp.c_landedcostallocation (m_product_id);
+create index concurrently idx_c_landedcostallocation_m_inoutline_idd on brerp.c_landedcostallocation (m_inoutline_id);
+create index concurrently idx_cof_tratamentopedido_c_order_id on brerp.cof_tratamentopedido (c_order_id);
+create index concurrently idx_cof_c_taxdetermination_line_lbr_docfiscal_id 	   on brerp.cof_c_taxdetermination_line (lbr_docfiscal_id);
+create index concurrently idx_cof_c_taxdetermination_line_m_product_id 		   on brerp.cof_c_taxdetermination_line (m_product_id);
+create index concurrently idx_cof_c_taxdetermination_line_c_bpartner_id 		   on brerp.cof_c_taxdetermination_line (c_bpartner_id);
+create index concurrently idx_cof_c_taxdetermination_line_lbr_docfiscal_line_id on brerp.cof_c_taxdetermination_line (lbr_docfiscal_line_id);
+create index concurrently idx_lbr_tax_record_id on brerp.lbr_tax (record_id);
+create index concurrently  idx_cof_trxestoqueprevisto_m_product_id on brerp.cof_trxestoqueprevisto (ad_org_id,ad_cli);
+create index concurrently  idx_cof_trxestoqueprevisto_lbr_docfiscal_line_id on brerp.cof_trxestoqueprevisto (lbr_docfiscal_line_id);
+create index concurrently  idx_cof_trxestoqueprevisto_cof_ajusteestoqueprvstline_id on brerp.cof_trxestoqueprevisto (cof_ajusteestoqueprvstline_id);
+                                                                                                                                         
