@@ -552,3 +552,15 @@ create index idx_t_inventoryvalue_m_product_id           on brerp.t_inventoryval
 create index idx_t_inventoryvalue_ad_pinstance_id        on brerp.t_inventoryvalue (ad_pinstance_id);
 create index idx_t_inventoryvalue_cof_productgroup_id    on brerp.t_inventoryvalue (cof_productgroup_id);
 create index idx_t_inventoryvalue_cof_grupofornecedor_id on brerp.t_inventoryvalue (cof_grupofornecedor_id);
+create index concurrently  idx_m_storagereservation_m_product_id_m_warehouse_id  on brerp.m_storagereservation (m_product_id,m_warehouse_id);
+create index concurrently  idx_m_storagereservation_ad_org_id_ad_client_id  	 on brerp.m_storagereservation (ad_org_id,ad_client_id); 
+create index concurrently idx_cob_contrato_valeu on brerp.cob_contrato (value);
+create index concurrently idx_c_bpartner_lbr_cnpj_and_cpf on brerp.c_bpartner (coalesce(lbr_CNPJ, lbr_CPF));
+create index concurrently idx_c_bpartner_lbr_cnpj on brerp.c_bpartner (lbr_CNPJ);
+create index concurrently idx_c_bpartner_lbr_cpf on brerp.c_bpartner (lbr_CPF);
+create index concurrently idx_cob_participantecontrato_cob_contrato_id on brerp.cob_participantecontrato (COB_Contrato_ID);
+CREATE EXTENSION pg_trgm;
+create index concurrently idx_c_city_name_funcao on brerp.c_city USING gin  ( name2uri(name) gin_trgm_ops );
+create index concurrently idx_C_BPartner_valeu  on brerp.C_BPartner USING gin  ( Value gin_trgm_ops );
+create index concurrently idx_ad_user_phone on brerp.ad_user (phone);                                                                                                                                           
+                                                                                                                                           
