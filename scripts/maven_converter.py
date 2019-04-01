@@ -1,3 +1,44 @@
+""" BrERP Maven converter
+
+With the new Maven build defined as default for newest releases of the iDempiere framework (>= 6.1)
+we needed to migrate our (more than 40 different customers projects) customers to this new architecture.
+
+This script allows easy this job doing an automated migration and the programmer just needs 
+to review the content.
+
+By default, all our customization projects repositories contains the same set of plugins as follows:
+
+client
+        |_org.client.base
+        |_org.client.base.callout
+        |_org.client.base.process
+        |_org.client.ui
+        |_org.client.ui.zk
+        |_org.client.ui.zk.resources
+        |_org.client.p2.targetplatform
+        |_org.client.server.feature
+
+If your project follows this structure you just need to execute the script, that may be located at the same level as your main project folder and customer project folder, passing the customer name as parameter.
+
+For example, if you have this :
+
+workspace
+        |_brerp_source_folder (or idempiere)
+        |_client
+        |_maven_converter.py
+
+Then you can execute:
+
+cd $workspace
+python3 maven_converter.py client
+
+And it's done!
+
+
+NOTE: this script was developed for internal use at devCoffee and was published on intention to be usefull for others.
+
+"""
+
 from sys import argv
 from os import system
 
