@@ -21,3 +21,4 @@ ALTER TABLE brerp.ad_scheduler               SET (fillfactor = 50);
 ALTER TABLE brerp.c_acctprocessor            SET (fillfactor = 50);
 alter table brerp.ad_session                 SET (fillfactor = 50); 
 alter table brerp.c_bpartner                 SET (fillfactor = 50); 
+alter table brerp.mp_assetmeter              SET (fillfactor = 50);
