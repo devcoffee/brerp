@@ -583,4 +583,11 @@ create index concurrently  IF NOT EXISTS idx_lbr_tax_record_id on brerp.lbr_tax 
 create index concurrently  IF NOT EXISTS idx_cof_trxestoqueprevisto_m_product_id on brerp.cof_trxestoqueprevisto (ad_org_id,ad_cli);
 create index concurrently  IF NOT EXISTS idx_cof_trxestoqueprevisto_lbr_docfiscal_line_id on brerp.cof_trxestoqueprevisto (lbr_docfiscal_line_id);
 create index concurrently  IF NOT EXISTS idx_cof_trxestoqueprevisto_cof_ajusteestoqueprvstline_id on brerp.cof_trxestoqueprevisto (cof_ajusteestoqueprvstline_id);
-                                                                                                                                         
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridicoevento_cob_processojuridico ON  brerp.cob_processojuridicoevento (cob_processojuridico_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridicoevento_cob_eventojuridico   ON  brerp.cob_processojuridicoevento (cob_eventojuridico_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridico_cob_advogado_id  			 ON  brerp.cob_processojuridico (cob_advogado_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridico_cob_reu_id  				 ON  brerp.cob_processojuridico (cob_reu_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridico_cob_numeroprocesso  		 ON  brerp.cob_processojuridico (cob_numeroprocesso);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridico_c_city_id    				 ON  brerp.cob_processojuridico (c_city_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridico_cob_processojuridico_rel   ON  brerp.cob_processojuridico (cob_processojuridico_rel_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridico_cob_fasejuridica_id  		 ON  brerp.cob_processojuridico (cob_fasejuridica_id);                                                                                                                                         
