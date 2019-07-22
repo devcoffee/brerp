@@ -590,4 +590,5 @@ CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridico_cob_reu_id  		
 CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridico_cob_numeroprocesso  		 ON  brerp.cob_processojuridico (cob_numeroprocesso);
 CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridico_c_city_id    				 ON  brerp.cob_processojuridico (c_city_id);
 CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridico_cob_processojuridico_rel   ON  brerp.cob_processojuridico (cob_processojuridico_rel_id);
-CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridico_cob_fasejuridica_id  		 ON  brerp.cob_processojuridico (cob_fasejuridica_id);                                                                                                                                         
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridico_cob_fasejuridica_id  		 ON  brerp.cob_processojuridico (cob_fasejuridica_id);
+create index  IF NOT EXISTS idx_z_manifesto_c_bpartner_id_c_order_id on brerp.z_manifesto (c_bpartner_id,c_order_id);
