@@ -23,4 +23,6 @@ Ao executar o passo 10, existirem 2 registros com o mesmo nome da empresa, nesse
 * UPDATE AD_Field SET AD_FieldGroup_ID = ID_Registro_Criado_Primeiro WHERE AD_FieldGroup_ID = ID_Registro_Criado_Depois
 * DELETE FROM AD_GroupField WHERE AD_FieldGroup_ID = ID_Registro_Criado_Depois
 
+IMPORTANTE: os arquivos Reorganizacao_Campos_Utils.sql e ad_reference_update_utils.sql possuem querys úteis para a geração dos arquivos utilizados nesse passo a passo e devem ser regerados periodicamente antes de serem utilizados. Contam também com consultas úteis para validação do procedimento.
+
 
