@@ -150,3 +150,5 @@ drop index  if exists brerp.idx_ad_changelog_ad_table_id;
 drop index  if exists brerp.idx_ad_changelog_created;
 drop index  if exists brerp.idx_ad_changelog_createdby;
 drop index  if exists brerp.idx_fact_acct_account_dateacct_org_acctschema;
+drop index if exists brerp.idx_cob_encargo_cob_cob_valorcalculado;
+drop index if exists brerp.idx_cob_encargo_cob_tipoencargo_id;
