@@ -593,3 +593,6 @@ CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridico_cob_processoju
 CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_processojuridico_cob_fasejuridica_id  		 ON  brerp.cob_processojuridico (cob_fasejuridica_id);
 create index  IF NOT EXISTS idx_z_manifesto_c_bpartner_id_c_order_id on brerp.z_manifesto (c_bpartner_id,c_order_id);
 CREATE index concurrently IF NOT EXISTS  idx_cob_encargo_cob_acordolinha_cob_tipoencargo 	ON brerp.cob_encargo (cob_acordolinha_id,cob_tipoencargo_id);
+CREATE INDEX concurrently IF NOT exists idx_cob_contratogarantia_cob_contrato on brerp.cob_contratogarantia (cob_contrato_id);
+CREATE INDEX concurrently IF NOT exists idx_cob_contratogarantia_m_product 	 on brerp.cob_contratogarantia (m_product_id);
+create index concurrently  IF NOT EXISTS idx_C_BPartner_NAME on brerp.C_BPartner USING gin  ( NAME gin_trgm_ops );
