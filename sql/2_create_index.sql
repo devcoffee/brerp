@@ -620,3 +620,8 @@ CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_participantecontrato_cob_pnpart
 CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_acordocobrancalinha_cob_acordo_id			on brerp.cob_acordocobrancalinha (cob_acordo_id);
 CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_acordocobrancalinha_cob_contrato_id		on brerp.cob_acordocobrancalinha (cob_contrato_id);
 CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_acordocobrancalinha_cob_cobrancalinha_id	on brerp.cob_acordocobrancalinha (cob_cobrancalinha_id); 
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_acordo_cob_negociador_id		on brerp.cob_acordo (cob_negociador_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_acordo_cob_pncredor_id			on brerp.cob_acordo (cob_pncredor_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_acordo_documentno				on brerp.cob_acordo (documentno);  
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_acordo_cob_pndevedor_id	on brerp.cob_acordo (cob_pndevedor_id);  
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS idx_cob_acordo_cob_contrato_id	on brerp.cob_acordo (cob_contrato_id);  
