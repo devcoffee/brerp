@@ -596,3 +596,25 @@ CREATE index concurrently IF NOT EXISTS  idx_cob_encargo_cob_acordolinha_cob_tip
 CREATE INDEX concurrently IF NOT exists idx_cob_contratogarantia_cob_contrato on brerp.cob_contratogarantia (cob_contrato_id);
 CREATE INDEX concurrently IF NOT exists idx_cob_contratogarantia_m_product 	 on brerp.cob_contratogarantia (m_product_id);
 create index concurrently  IF NOT EXISTS idx_C_BPartner_NAME on brerp.C_BPartner USING gin  ( NAME gin_trgm_ops );
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_contratoentradasaida_cob_contratolinha     on brerp.cob_contratoentradasaida (cob_contratolinha_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_contratoentradasaida_cob_contrato		    on brerp.cob_contratoentradasaida (cob_contrato_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_contratoentradasaida_cob_ultimaparcelapaga on brerp.cob_contratoentradasaida (cob_ultimaparcelapaga_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_spf_cob_processojuridicoevento     		on brerp.cob_spf (cob_processojuridicoevento_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_spf_c_bpartner								on brerp.cob_spf (c_bpartner_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_spflinha_cob_spf     						on brerp.cob_spflinha (cob_spf_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_historicocontato_cob_ocorrenciacontato_id  on brerp.cob_historicocontato (cob_ocorrenciacontato_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_processojuridicolinha_cob_contrato_id    	on brerp.cob_processojuridicolinha (cob_contrato_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_processojuridicolinha_cob_fasejuridica_id   on brerp.cob_processojuridicolinha (cob_fasejuridica_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_processojuridicolinha_cob_processojuridico_id   on brerp.cob_processojuridicolinha (cob_processojuridico_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_visitainloco_c_bpartner_id    on brerp.cob_visitainloco (c_bpartner_id);
+ CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_visitainlocolinha_cob_contrato_id   on brerp.cob_visitainlocolinha (cob_contrato_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_visitainlocolinha_cob_visitainloco_id   on brerp.cob_visitainlocolinha (cob_visitainloco_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_cobranca_cob_contrato_id    on brerp.cob_cobranca (cob_contrato_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_cobranca_cob_negociador_id    on brerp.cob_cobranca (cob_negociador_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_cobranca_cob_pncredor_id   on brerp.cob_cobranca (cob_pncredor_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_spflinha_c_invoice_id   on brerp.cob_spflinha (c_invoice_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_spflinha_c_order_id  on brerp.cob_spflinha (c_order_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_spflinha_c_orderpo_id  on brerp.cob_spflinha (c_orderpo_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_participantecontrato_cob_participantecontrato_id    on brerp.cob_participantecontrato (cob_participantecontrato_id);
+CREATE INDEX CONCURRENTLY  IF NOT EXISTS cob_participantecontrato_cob_pnparticipante_id   		on brerp.cob_participantecontrato (cob_pnparticipante_id);
+ 
