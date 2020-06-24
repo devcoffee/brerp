@@ -354,6 +354,8 @@ DELETE FROM cof_c_taxdetermination_hdr  ;
 delete from c_invoicepayschedule;
 delete from c_orderpayschedule;
 
+delete from COF_Participant;
+
 
 
 -- OTHER CORE TABLES
