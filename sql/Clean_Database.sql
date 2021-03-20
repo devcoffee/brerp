@@ -323,6 +323,10 @@ DELETE FROM LBR_EventoNFe;
 -- DELETE COF_DocFiscal_Inut
 DELETE FROM COF_DocFiscal_Inut;
 
+-- DFe
+DELETE FROM COF_DFe;
+
+
 -- DELETE LBR_InutilizacaoNFe
 DELETE FROM LBR_InutilizacaoNFe;
 
